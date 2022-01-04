@@ -31,6 +31,9 @@ body {
     font-family: var(--fonte-padrao);
 
    }
+   a.externo::after {
+       content: '\00A0\1F517';
+   }
    main p {
         margin:15px 0px;
         text-align: justify;
@@ -45,6 +48,7 @@ body {
        color: white;
        font-family: var(--fonte-destaque);
        font-size: 3am;
+       font-weight: normal;
        margin-bottom: 20px;
        text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
 
@@ -92,12 +96,15 @@ body {
    main h1 {
        color: var(--cor5);
        font-family: var(--fonte-android);
+       font-weight: normal;
+       font-size: 1.8em;
    }
    
    main h2 {
        font-family: var(--fonte-android);
        color: var(--cor4);
        font-size: 1.3em;
+       font-weight: normal;
        background-image: linear-gradient(to right,var(--cor1),transparent);
        text-indent: 8px;
    }
@@ -130,8 +137,55 @@ body {
        display: block;
        margin: auto;
    }
+   div.video {
+       background-color: var(--cor5);
+       margin: 0px -20px 30px -20px;
+       margin: 0px -20px;
+       padding: 20px;
+       padding-bottom: 59%;
+       position: relative;
+   }
+   div.video > iframe {
+       position: absolute;
+       top:5%;
+       left:5%;
+       width: 90%;
+       height: 90%;
 
+   }
+   aside {
+       background-color: var(--cor1);
+       padding: 10px;
+       border-radius: 10px;
+       box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.281);
+   }
+   aside >H3{
+       background-color:var(--cor4);
+       color: white;
+       padding: 10px;
+       margin: -10px -10px 0px -10px;
+       border-radius: 10px 10px 0px 0px ;
+   }
+   aside >ul {
+       list-style-type: '\2714\00A0\00A0';
+       list-style-position: inside;
+       columns: 2;
+   }
    footer {
        background-color: var(--cor5);
        color: white;
+       text-align: center;
+       font-size: 0.8em;
+       padding: 5px;
+
+   }
+   footer a {
+       color: white;
+       font-weight: bolder;
+       text-decoration: none;
+   }
+   footer a:hover {
+       text-decoration: underline;
+       color: var(--cor1);
+
    }
